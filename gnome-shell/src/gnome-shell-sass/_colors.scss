@@ -7,7 +7,7 @@ $bg_color: if($variant == 'light', #FAFAFA, lighten($inkstone, 0.5%));
 $fg_color: if($variant == 'light', $inkstone, $porcelain);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', $orange, darken($orange, 4%));
+$selected_bg_color: if($variant == 'light', $primary_accent_color, darken($primary_accent_color, 4%));
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
 $borders_color: if($variant == 'light', darken($bg_color, 20%), darken($bg_color, 11%));
 $alt_borders_color: if($variant == 'light', darken($bg_color, 24%), darken($bg_color, 10%));
@@ -67,4 +67,4 @@ $progress_bg_color: $selected_bg_color;
 $progress_border_color: $selected_borders_color;
 $checkradio_bg_color: $selected_bg_color;
 $checkradio_fg_color: #ffffff;
-$focus_border_color: lighten($selected_bg_color, 14%);
+$focus_border_color: lighten($primary_accent_color, 14%);
