@@ -186,7 +186,7 @@
   $_hilight_color: _button_hilight_color($c);
   $_button_edge: if($edge == none, none, _widget_edge($edge));
   $_blank_edge: if($edge == none, none, _widget_edge(transparentize($edge,1)));
-  $_button_shadow: 0 1px 2px transparentize($shadow_color, 0.03);
+  // $_button_shadow: 0 1px 2px transparentize($shadow_color, 0.03);
 
   @if $t==normal {
   //
@@ -199,7 +199,7 @@
     $button_fill: if($c == $bg_color, if($variant == 'light', image(lighten($c, 2%)), image(lighten($c, 4%))), image(lighten($c, 2%))) !global;
     background-image: $button_fill;
     @include _button_text_shadow($tc, $c);
-    @include _shadows(0 1px transparentize(black, 0.9));
+    // @include _shadows(0 1px transparentize(black, 0.9));
   }
 
   @else if $t==hover {
@@ -213,14 +213,14 @@
     @if $variant == 'light' {
       $button_fill: linear-gradient(to top, $c, lighten($c, 1%) 1px) !global;
       @include _button_text_shadow($tc, lighten($c, 6%));
-      @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), $_button_edge, $_button_shadow);
+      // @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), $_button_edge, $_button_shadow);
     }
     @else {
       $button_fill: linear-gradient(to top, darken($c,1%), lighten($c, 1%) 1px) !global;
       @include _button_text_shadow($tc,lighten($c, 6%));
-      @include _shadows(inset 0 1px _button_hilight_color(darken($c, 2%)), $_button_edge, $_button_shadow);
+      // @include _shadows(inset 0 1px _button_hilight_color(darken($c, 2%)), $_button_edge, $_button_shadow);
     }
-    box-shadow: 0 1px transparentize(black, if($variant=='light', 0.8, 0.85));
+    // box-shadow: 0 1px transparentize(black, if($variant=='light', 0.8, 0.85));
     background-image: if($c == $bg_color, if($variant == 'light', image(lighten($c, 4%)), image(lighten($c, 6%))), image(lighten($c, 4%)));
   }
 
@@ -234,15 +234,15 @@
     @include _button_text_shadow($tc, $c);
     @if $variant == 'light' {
       background-image: linear-gradient(to bottom, lighten($c, 5%) 20%, $c 90%);
-       @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),
-                        $_button_edge, $_button_shadow);
+      //  @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),
+                        // $_button_edge, $_button_shadow);
     }
     @else {
       background-image: linear-gradient(to bottom, darken($c, 3%) 20%, darken($c, 6%) 90%);
-      @include _shadows(inset 0 1px $_hilight_color,
-                        $_button_edge, $_button_shadow);
+      // @include _shadows(inset 0 1px $_hilight_color,
+      //                   $_button_edge, $_button_shadow);
     }
-    box-shadow: 0 1px transparentize(black, if($variant=='light', 0.8, 0.85));
+    // box-shadow: 0 1px transparentize(black, if($variant=='light', 0.8, 0.85));
     background-image: image(lighten($c, 10%));
   }
 
@@ -255,16 +255,16 @@
     border-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
     @if $variant == 'light' {
       $button_fill: linear-gradient(to bottom, lighten($c, 9%) 10%, lighten($c, 4%) 90%) !global;
-      @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),
-                        $_button_edge, $_button_shadow);
+      // @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),
+      //                   $_button_edge, $_button_shadow);
     }
     @else {
       $button_fill: linear-gradient(to bottom, $c 20%, darken($c, 4%) 90%) !global;
-      @include _shadows(inset 0 1px $_hilight_color,
-                        $_button_edge, $_button_shadow);
+      // @include _shadows(inset 0 1px $_hilight_color,
+      //                   $_button_edge, $_button_shadow);
     }
     background-image: image(lighten($c, 6%));
-    box-shadow: 0 1px transparentize(black, 0.8);
+    // box-shadow: 0 1px transparentize(black, 0.8);
   }
 
   @else if $t==active {
