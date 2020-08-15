@@ -96,7 +96,7 @@ $backdrop_headerbar_insensitive_color: mix($headerbar_fg_color, $backdrop_header
 
 $window_close_bg_color: $ganbaro-red-500;
 $window_close_fg_color: $porcelain;
-$window_minimize_bg_color: $ganbaro-yellow-50;
-$window_minimize_fg_color: $jet;
-$window_maximize_bg_color: $ganbaro-green-500;
-$window_maximize_fg_color: $jet;
+$window_minimize_bg_color: $ganbaro-yellow-a700;
+$window_minimize_fg_color: $porcelain;
+$window_maximize_bg_color: $ganbaro-green-900;
+$window_maximize_fg_color: $porcelain;
