@@ -111,68 +111,38 @@ button.titlebutton:not(.appmenu) {
   headerbar.selection-mode &,
   & {
     &.close {
-      // color: $window_close_fg_color;
-      // @include draw_circle($window_close_bg_color);
-
       &:hover {
         color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
-        // @include draw_circle(lighten($window_close_bg_color, 5%));
       }
 
       &:active {
         color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
-        // @include draw_circle(darken($window_close_bg_color, 5%));
-      }
-
-      &:backdrop {
-        @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 15%, 40%), 10%)));
-        &:hover { @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 20%, 45%), 15%))); }
       }
     }
 
     &.minimize {
-      // color: $window_minimize_fg_color;
-      // @include draw_circle($window_minimize_bg_color);
-
       &:hover {
         color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
-        // @include draw_circle(lighten($window_minimize_bg_color, 5%));
       }
 
       &:active {
         color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
-        // @include draw_circle(darken($window_minimize_bg_color, 5%));
-      }
-
-      &:backdrop {
-        @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 15%, 40%), 10%)));
-        &:hover { @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 20%, 45%), 15%))); }
       }
     }
 
     &.maximize {
-      // color: $window_maximize_fg_color;
-      // @include draw_circle($window_maximize_bg_color);
-
       &:hover {
         color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
-        // @include draw_circle(lighten($window_maximize_bg_color, 5%));
       }
 
       &:active {
         color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
-        // @include draw_circle(darken($window_maximize_bg_color, 5%));
-      }
-
-      &:backdrop {
-        @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 15%, 40%), 10%)));
-        &:hover { @include draw_circle(lighten($inkstone, if($variant=='light', if($ambiance==true, 20%, 45%), 15%))); }
       }
     }
   }
