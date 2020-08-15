@@ -117,13 +117,13 @@ button.titlebutton:not(.appmenu) {
       &:hover {
         color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
-        @include draw_circle(lighten($window_close_bg_color, 5%));
+        // @include draw_circle(lighten($window_close_bg_color, 5%));
       }
 
       &:active {
         color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
-        @include draw_circle(darken($window_close_bg_color, 5%));
+        // @include draw_circle(darken($window_close_bg_color, 5%));
       }
 
       &:backdrop {
@@ -139,13 +139,13 @@ button.titlebutton:not(.appmenu) {
       &:hover {
         color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
-        @include draw_circle(lighten($window_minimize_bg_color, 5%));
+        // @include draw_circle(lighten($window_minimize_bg_color, 5%));
       }
 
       &:active {
         color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
-        @include draw_circle(darken($window_minimize_bg_color, 5%));
+        // @include draw_circle(darken($window_minimize_bg_color, 5%));
       }
 
       &:backdrop {
@@ -161,13 +161,13 @@ button.titlebutton:not(.appmenu) {
       &:hover {
         color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
-        @include draw_circle(lighten($window_maximize_bg_color, 5%));
+        // @include draw_circle(lighten($window_maximize_bg_color, 5%));
       }
 
       &:active {
         color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
-        @include draw_circle(darken($window_maximize_bg_color, 5%));
+        // @include draw_circle(darken($window_maximize_bg_color, 5%));
       }
 
       &:backdrop {
