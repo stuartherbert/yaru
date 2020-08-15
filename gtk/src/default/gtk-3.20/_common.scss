@@ -2199,8 +2199,8 @@ menu,
 .context-menu {
   margin: 4px; // see https://bugzilla.gnome.org/show_bug.cgi?id=591258
   padding: 4px 0px;
-  background-color: $menu_bg_color;
-  color: $menu_fg_color;
+  background-color: $bg_color;
+  color: $fg_color;
   border: 1px solid $borders_color; // adds borders in a non composited env
 
   .csd & {
