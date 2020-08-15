@@ -110,29 +110,18 @@ button.titlebutton:not(.appmenu) {
   .titlebar &,
   headerbar.selection-mode &,
   & {
-    &.maximize, &.minimize {
-
-      &, &:backdrop {
-        &:hover {
-          @include draw_circle(if($ambiance==true, lighten($inkstone, 7%), $_base_hover_color));
-        }
-
-        &:active {
-          @include draw_circle(if($ambiance==true, lighten($inkstone, 12%), $_base_active_color));
-        }
-      }
-    }
-
     &.close {
-      color: $window_close_fg_color;
-      @include draw_circle($window_close_bg_color);
+      // color: $window_close_fg_color;
+      // @include draw_circle($window_close_bg_color);
 
       &:hover {
+        color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
         @include draw_circle(lighten($window_close_bg_color, 5%));
       }
 
       &:active {
+        color: $window_close_fg_color;
         @include draw_circle($window_close_bg_color);
         @include draw_circle(darken($window_close_bg_color, 5%));
       }
@@ -144,15 +133,17 @@ button.titlebutton:not(.appmenu) {
     }
 
     &.minimize {
-      color: $window_minimize_fg_color;
-      @include draw_circle($window_minimize_bg_color);
+      // color: $window_minimize_fg_color;
+      // @include draw_circle($window_minimize_bg_color);
 
       &:hover {
+        color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
         @include draw_circle(lighten($window_minimize_bg_color, 5%));
       }
 
       &:active {
+        color: $window_minimize_fg_color;
         @include draw_circle($window_minimize_bg_color);
         @include draw_circle(darken($window_minimize_bg_color, 5%));
       }
@@ -164,15 +155,17 @@ button.titlebutton:not(.appmenu) {
     }
 
     &.maximize {
-      color: $window_maximize_fg_color;
-      @include draw_circle($window_maximize_bg_color);
+      // color: $window_maximize_fg_color;
+      // @include draw_circle($window_maximize_bg_color);
 
       &:hover {
+        color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
         @include draw_circle(lighten($window_maximize_bg_color, 5%));
       }
 
       &:active {
+        color: $window_maximize_fg_color;
         @include draw_circle($window_maximize_bg_color);
         @include draw_circle(darken($window_maximize_bg_color, 5%));
       }
