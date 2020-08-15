@@ -21,6 +21,8 @@ $dark_fill: mix($borders_color, $bg_color, 50%);
 $headerbar_color: if($variant == 'light', lighten($bg_color, 5%), darken($bg_color, 3%));
 $menu_fg_color: $porcelain;
 $menu_bg_color: #323030;
+$menu_hover_bg_color: lighten($menu_bg_color, 10%);
+$menu_hover_fg_color: $menu_fg_color;
 $popover_bg_color: if($variant == 'light', #FAFAFA, lighten($inkstone, 1%));
 $popover_hover_color: transparentize($fg_color, 0.85);
 
