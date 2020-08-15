@@ -1,6 +1,7 @@
 // When color definition differs for dark and light variant
 // it gets @if ed depending on $variant
 @import 'ubuntu-colors';
+@import 'ganbaro-colors';
 
 $base_color: if($variant == 'light', #ffffff, lighten(desaturate($jet, 20%), 11%));
 $text_color: if($variant == 'light', black, white);
@@ -8,7 +9,7 @@ $bg_color: if($variant == 'light', $porcelain, lighten($inkstone, 0.5%));
 $fg_color: if($variant == 'light', $inkstone, $porcelain);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', $orange, darken($orange, 4%));
+$selected_bg_color: if($variant == 'light', $ganbaro-blue-300, darken($ganbaro-blue-300, 4%));
 
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
 $borders_color: if($variant == 'light', darken($bg_color, 20%), darken($bg_color, 11%));
@@ -21,7 +22,7 @@ $dark_fill: mix($borders_color, $bg_color, 50%);
 $headerbar_color: if($variant == 'light', lighten($bg_color, 5%), darken($bg_color, 3%));
 $menu_fg_color: $porcelain;
 $menu_bg_color: #323030;
-$menu_hover_bg_color: lighten($menu_bg_color, 10%);
+$menu_hover_bg_color: $ganbaro-blue-300;
 $menu_hover_fg_color: $menu_fg_color;
 $popover_bg_color: if($variant == 'light', #FAFAFA, lighten($inkstone, 1%));
 $popover_hover_color: transparentize($fg_color, 0.85);
@@ -75,12 +76,12 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 //special cased widget colors
 $suggested_bg_color: if($variant == 'light', lighten($green, 5%), darken($green, 5%));
 $suggested_border_color: if($variant=='light', darken($suggested_bg_color, 5%), darken($suggested_bg_color, 10%));
-$progress_bg_color: if($variant=='light', $aubergine, darken($aubergine, 8%));
+$progress_bg_color: if($variant=='light', $ganbaro-green-a700, darken($ganbaro-green-a700, 8%));
 $progress_border_color: if($variant== 'light', darken($progress_bg_color, 5%), darken($progress_bg_color, 20%));
-$checkradio_bg_color: if($variant=='light', $aubergine, darken($aubergine, 8%));
+$checkradio_bg_color: if($variant=='light', $ganbaro-green-a700, darken($ganbaro-green-a700, 8%));
 $checkradio_fg_color: #ffffff;
 $checkradio_borders_color: if($variant == 'light', darken($checkradio_bg_color,20%), darken($checkradio_bg_color,40%));
-$focus_border_color: transparentize(lighten($orange, 14%), 0.3);
+$focus_border_color: transparentize(lighten($ganbaro-blue-300, 14%), 0.3);
 $coloured_focus_border_color: transparentize(white, 0.3);
 // Headerbar bg colors for the "mixed" theme
 $headerbar_bg_color: #323030;
@@ -92,3 +93,6 @@ $backdrop_headerbar_bg_color: lighten($headerbar_bg_color, 5%);
 $backdrop_headerbar_fg_color: mix($headerbar_fg_color, $headerbar_bg_color, 70%);
 $backdrop_headerbar_text_color: mix($headerbar_text_color, $backdrop_headerbar_bg_color, 70%);
 $backdrop_headerbar_insensitive_color: mix($headerbar_fg_color, $backdrop_headerbar_bg_color, 70%);
+
+$window_close_bg_color: $ganbaro-red-500;
+$window_close_fg_color: $porcelain;
