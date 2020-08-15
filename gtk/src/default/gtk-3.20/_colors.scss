@@ -21,7 +21,7 @@ $top_hilight: $borders_edge;
 $dark_fill: mix($borders_color, $bg_color, 50%);
 $headerbar_color: if($variant == 'light', lighten($bg_color, 5%), darken($bg_color, 3%));
 $menu_fg_color: $porcelain;
-$menu_bg_color: #323030;
+$menu_bg_color: $ganbaro-slate-800;
 $menu_hover_bg_color: $ganbaro-blue-300;
 $menu_hover_fg_color: $menu_fg_color;
 $popover_bg_color: if($variant == 'light', #FAFAFA, lighten($inkstone, 1%));
@@ -84,7 +84,7 @@ $checkradio_borders_color: if($variant == 'light', darken($checkradio_bg_color,2
 $focus_border_color: transparentize(lighten($ganbaro-blue-300, 14%), 0.3);
 $coloured_focus_border_color: transparentize(white, 0.3);
 // Headerbar bg colors for the "mixed" theme
-$headerbar_bg_color: #323030;
+$headerbar_bg_color: $ganbaro-slate-800;
 $headerbar_fg_color: $porcelain;
 $headerbar_border_color: lighten($headerbar_bg_color, 8%);
 $headerbar_text_color: $silk;
